@@ -1,0 +1,215 @@
+*{
+  box-sizing:border-box;
+}
+h1, h2, p, ul{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color:rgb(14, 57, 34);
+}
+body{
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+main{
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.vc-wrapper{
+  padding: 60px 25px 25px;
+  /* background: rgba(200, 193, 193, 0.056); */
+  
+  background-color: rgba(100, 136, 244, 0.176);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items:flex-start;
+  gap: 50px;
+  grid-template-areas:
+    'title name name name'
+    ' personal image date date'
+    'contacts tel git mail '
+    'aducation_tt aducation aducation aducation'
+    ' work_tt work work work'
+    'skills skills__ul skills__ul skills__ul'
+    ' qualities_tt qualities qualities qualities'; 
+}
+.lang{
+  position: absolute;
+  top: 20px;
+  right:25px;
+}
+.vc-wrapper{
+  /* grid-area: ln;
+  border-botoom: 5px solid green; */
+}
+.title {
+  grid-area: title;
+}
+.name {
+  grid-area: name;
+}
+
+.personal {
+  grid-area: personal;
+}
+
+.image {
+  grid-area: image;
+  margin: 0;
+}
+
+.image__img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.date{
+  grid-area: date;
+  text-align: left;
+}
+
+.contacts {
+  grid-area: contacts;
+  margin-top: 5px;
+}
+.contacts__icon{
+  width: 25px;
+  height: 25px;
+}
+.contacts__link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0;
+}
+.tel {
+  grid-area: tel;
+}
+
+.git {
+  grid-area: git;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.aducation_tt {
+  grid-area: aducation_tt;
+}
+
+.aducation {
+  grid-area: aducation;
+}
+
+.work_tt {
+  grid-area: work_tt;
+}
+
+.work {
+  grid-area: work;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.skills__ul {
+  grid-area: skills__ul;
+  padding-left: 15px;
+}
+
+.qualities_tt {
+  grid-area: qualities_tt;
+}
+
+.qualities {
+  grid-area: qualities;
+}
+.title, .personal, .contacts, .aducation_tt, .work_tt, .skills, .qualities_tt{
+  text-align: right;
+  padding-right: 5px;
+  background-color: rgba(100, 136, 244, 0.582);
+}
+
+@media(max-width:1440px){
+  .vc-wrapper{
+    gap:30;
+  }
+  .contacts__link{
+    flex-direction: column;
+    align-items: start;
+  }
+} 
+@media(max-width:720px) {
+  .vc-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        'title name name'
+        ' personal personal personal'
+        'image date date'
+        'contacts contacts contacts'
+        ' tel git mail '
+        'aducation_tt aducation_tt aducation_tt'
+        'aducation aducation aducation'
+        ' work_tt work_tt work_tt '
+        'work work work'
+        'skills skills skills'
+        'skills__ul skills__ul skills__ul'
+        ' qualities_tt qualities_tt qualities_tt' 
+        'qualities qualities qualities';
+  }
+  .title{
+    text-align: left;
+    margin-bottom: 20px;
+      }
+  .personal, .contacts, .aducation_tt, .work_tt, .skills, .qualities_tt{
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+    .contacts,.name, .tel, .git, .mail, .aducation, .work, .skills__ul, .qualities{
+    margin-bottom: 20px;
+  }
+}
+  @media(max-width:580px) {
+  .vc-wrapper {  
+    grid-template-areas:
+      'title name name'
+      ' personal personal date'
+      'image image date'
+      'contacts contacts contacts'
+      ' tel tel tel '
+      ' git git git '
+      ' mail mail mail '
+      'aducation_tt aducation_tt aducation_tt'
+      'aducation aducation aducation'
+      ' work_tt work_tt work_tt '
+      'work work work'
+      'skills skills skills'
+      'skills__ul skills__ul skills__ul'
+      ' qualities_tt qualities_tt qualities_tt'
+      'qualities qualities qualities';
+      gap: 10px;
+  }
+
+  .image{
+  margin-bottom: 20px;
+  }
+
+  .contacts__link{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contacts__icon{
+    width: 15px;
+    height: 15px;
+  }  
+}
