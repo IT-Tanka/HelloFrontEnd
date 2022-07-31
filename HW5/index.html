@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="get">
+    <h2>Create an Account</h2>
+    <section class="name">
+      <div class="first">
+        <label for="firstname">First Name </label>
+        <input type="text" id="firstname">
+      </div>
+      <div class="last">
+        <label for="lastname">Last Name </label>
+        <input type="text" id="lastname">
+      </div>
+    </section>
+    <section class="mail">
+      <label for="mail">E-mail</label>
+      <input type="email" id="mail">
+      <span>We'll never share your email with anyone else.</span>
+    </section>
+    <section class="sex">
+      <div class="radio-wr">
+        <input class="radio-sex" type="radio" id="male" name="sex" checked>
+        <label for="male">Male</label>
+      </div>
+      <div class="radio-wr">
+        <input type="radio" class="radio-sex" id="female" name="sex">
+        <label for="female">Female</label>
+      </div>
+    </section>
+    <section class="location">
+      <div class="country">
+        <label for="country-selector">Country</label>
+        <select name="country-place" id="country-selector" >  
+          <option value="Select" disabled selected >Select</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="Poland">Poland</option>
+          <option value="USA">USA</option>
+        </select>
+      </div>
+      <div class="city">
+        <label for="city">City </label>
+        <input type="text" id="city">
+      </div>
+    </section>
+    <section class="sub">
+      <button type="submit">Sign Up</button>
+      <p>By clicking the 'Sign Up' button, you confirm that you accept our<br> <a href="#" class="">Terms of Use</a> and <a href="#" class="">Privacy Policy</a> .
+    </p>
+    </section>
+    <footer>
+      <span>Have an account?</span>
+      <a href="#">Log In</a>
+    </footer>  
+  </form>
+</body>
+</html>
