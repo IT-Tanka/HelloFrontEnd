@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'), 
+  url('../fonts/ptsans/ptsans.woff2') format('woff2'), 
+  url('../fonts/ptsans/ptsans.woff') format('woff'), 
+  url('../fonts/ptsans/ptsans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Italic'), local('PTSans-Italic'), 
+  url('../fonts/ptsans/ptsansitalic.woff2') format('woff2'), 
+  url('../fonts/ptsans/ptsansitalic.woff') format('woff'), 
+  url('../fonts/ptsans/ptsansitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'), local('PTSans-Bold'), 
+  url('../fonts/ptsans/ptsansbold.woff2') format('woff2'), 
+  url('../fonts/ptsans/ptsansbold.woff') format('woff'), 
+  url('../fonts/ptsans/ptsansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), 
+  url('../fonts/ptsans/ptsansbolditalic.woff2') format('woff2'), 
+  url('../fonts/ptsans/ptsansbolditalic.woff') format('woff'), 
+  url('../fonts/ptsans/ptsansbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Farro';
+  src: local('Farro Light'), local('Farro-Light'),
+    url('../fonts/farro/Farro-Light.woff2') format('woff2'),
+    url('../fonts/farro/Farro-Light.woff') format('woff'),
+    url('../fonts/farro/Farro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Francois One';
+  src: local('Francois One Regular'), local('Francois-One-Regular'),
+    url('../fonts/francois_one/FrancoisOne-Regular.woff2') format('woff2'),
+    url('../fonts/francois_one/FrancoisOne-Regular.woff') format('woff'),
+    url('../fonts/francois_one/FrancoisOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Staatliches';
+  src: url('../fonts/staatliches/Staatliches-Regular.eot');
+  src: local('../fonts/staatliches/Staatliches Regular'), local('Staatliches-Regular'),
+    url('../fonts/staatliches/Staatliches-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/staatliches/Staatliches-Regular.woff2') format('woff2'),
+    url('../fonts/staatliches/Staatliches-Regular.woff') format('woff'),
+    url('../fonts/staatliches/') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Tourney-Semibold;
+  src: url("../fonts/Tourney-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot?ivu1st');
+  src: url('../fonts/icons/icomoon.eot?ivu1st#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?ivu1st') format('truetype'),
+    url('../fonts/icons/icomoon.woff?ivu1st') format('woff'),
+    url('../fonts/icons/icomoon.svg?ivu1st#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-shopify1 .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+
+.icon-shopify1 .path2:before {
+  content: "\e901";
+  margin-left: -0.876953125em;
+  color: rgb(142, 142, 142);
+}
+
+.icon-shopify1 .path3:before {
+  content: "\e902";
+  margin-left: -0.876953125em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-wix:before {
+  content: "\e903";
+}
+
+.icon-saleforse:before {
+  content: "\e904";
+  color: #FFF;
+}
+
+.icon-wix1 .path1:before {
+  content: "\e905";
+  color: rgb(0, 0, 0);
+}
+
+.icon-wix1 .path2:before {
+  content: "\e906";
+  margin-left: -1.2353515625em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-wix1 .path3:before {
+  content: "\e907";
+  margin-left: -1.2353515625em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-wix1 .path4:before {
+  content: "\e908";
+  margin-left: -1.2353515625em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-wix1 .path5:before {
+  content: "\e909";
+  margin-left: -1.2353515625em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-wix1 .path6:before {
+  content: "\e90a";
+  margin-left: -1.2353515625em;
+  color: rgb(0, 0, 0);
+}
+
+.icon-pinterest1:before {
+  content: "\e90b";
+}
+
+.icon-pinterest:before {
+  content: "\e90c";
+}
+
+.icon-saleforse1:before {
+  content: "\e90d";
+}
+
+.icon-shopify:before {
+  content: "\e90e";
+}
+
+.icon-soundcloud:before {
+  content: "\e90f";
+}
+
+.icon-skype:before {
+  content: "\e910";
+}
+
+.icon-instagram:before {
+  content: "\e911";
+}
+
+.icon-facebook:before {
+  content: "\e912";
+}
