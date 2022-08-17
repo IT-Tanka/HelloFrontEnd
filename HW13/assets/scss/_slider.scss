@@ -1,0 +1,240 @@
+$lihgt-grey:#666;
+$dark-grey:#333;
+
+.slider {
+  
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1030px;
+    height: 560px;
+  }
+
+  .card {
+
+    .card-left {
+      width: 50%;
+      border-right: 1px solid $gold;
+      padding-top: 80px;
+      padding-bottom: 75px;
+      padding-right: 85px;
+
+    &__photo {
+      width: 400px;
+      height: 400px;
+      border: 1px solid $gold;
+      position: relative;
+
+      .photo__img {
+      width: 100%;
+      }
+      %angle {
+        display: block;
+        width: 100px;
+        height: 100px;
+        content: "";
+        border-top: 1px solid $gold;
+        border-left: 1px solid $gold;
+        background-color: transparent;
+        position: absolute;
+
+      }
+
+      .angle1 {
+        @extend %angle;
+        top: -15px;
+        left: -15px;
+      }
+
+      .angle2 {
+        @extend %angle;
+        transform: rotate(90deg);
+        top: -15px;
+        right: -15px;
+      }
+
+      .angle3 {
+        @extend %angle;
+        transform: rotate(-90deg);
+        bottom: -15px;
+        left: -15px;
+      }
+
+      .angle4 {
+        @extend %angle;
+        transform: rotate(180deg);
+        bottom: -15px;
+        right: -15px;
+      }
+    }
+  }
+
+  .card-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 75px;
+    padding-left: 85px;
+
+    &__name {
+      font-family: 'Roboto Black';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: capitalize;
+      color: $lihgt-grey;
+    }
+
+    &__line {
+      width: 100px;
+      height: 1px;
+      background-color:$gold;
+      margin: 0 auto;
+    }
+
+    &__prof {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.5;  
+      text-align: center;
+      text-transform: capitalize;
+      color:$lihgt-grey;
+    }
+
+    &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto 49px;
+    }
+
+    .social__link{
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      padding: 0;
+      display: block;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border:2px solid #CCCCCC;;
+      text-decoration: none;
+      font-size: 12px;
+      text-align: center;
+      line-height: 30px;
+      transition: all 0.7S; 
+    }
+
+    .social__link:hover:before{
+      color:$gold;
+    }
+
+    .social__link:hover{
+      background-color:$lihgt-grey;
+    }
+
+    &__desc {
+    font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.71;
+      text-align: center;
+      color:$dark-grey;
+      max-width: 430px;
+    }
+
+    .slider__pagination {
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      margin: 0 auto 25px;
+      cursor: pointer;
+    }
+
+    %ln{
+      display: block;
+      height: 4px;  
+      background: $gold;
+    }
+    .pagination__ln {
+      @extend %ln;
+      width: 10px;
+    }
+    .bigger-ln {
+      @extend %ln;
+      width: 20px;
+    }
+
+    &__btn {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;  
+      color: $lihgt-grey;
+      width: 118px;
+      height: 24px;        
+      border: 1px solid $gold;
+      background-color:#fff;
+      margin: 0 auto;
+      cursor: pointer;
+      transition:all 0.8S;
+
+      &:hover{
+        background-color:$lihgt-grey;
+        color:$gold;
+      }
+    }
+  }
+}
+}
+@media(max-width:1062px){
+  .slider{
+    .card{
+      flex-direction:column;
+      align-items: center;
+      .card-left{
+        width: 100%;
+        border-right:none;
+        padding: 50px 0 50px 0;
+        .card-left__photo{
+          margin: 0 auto;
+        }
+      }
+      .card-right{
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
+@media(max-width:420px) {
+.slider {
+    .card {
+      .card-left{
+        &__photo {
+            width: 200px;
+            height: 200px;
+        }
+      }
+    } 
+  }
+}
