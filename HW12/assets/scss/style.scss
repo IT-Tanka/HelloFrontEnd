@@ -1,0 +1,36 @@
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+a, h2, h3, h4, p{
+  padding: 0;
+  margin: 0;
+}
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+@import '_header-footer';
+@import '_card';
+@import '_services';
+
+@media(max-width:768px){
+  .services{
+    padding: 20px 0;
+    &__title, &__name{
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__wrp{
+      flex-direction: column;
+    }
+  }
+}
