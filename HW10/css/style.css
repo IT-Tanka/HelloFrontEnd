@@ -1,0 +1,165 @@
+*, ::after,::before{
+  box-sizing: border-box;
+}
+
+a{ 
+  color:inherit;
+}
+dl, dd, dt, h2,
+p{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+.container{
+  max-width: 1210px;
+  padding:0 5px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  margin-bottom: 70px;
+}
+.header__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__lang{
+  margin: 0;
+  padding: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color:#FFF;
+  font-family: 'Tourney';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 0.82;
+  letter-spacing: 0.04em;
+}
+.header__nav{
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;  
+  letter-spacing: 0.03em;  
+  margin-left: 50px;
+}
+.nav__link{
+  text-decoration: none;
+}
+.header__logo{
+  width: 238px;
+  height: 49px;
+}
+.main {
+  margin: 0;
+  padding: 0;
+}
+.article+ .article{
+  margin-top: 57px;
+} 
+.article__title {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.33;  
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.article__title .sup{
+  font-family: 'Farro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform:lowercase;
+}
+.article__title .supc{
+  text-transform: uppercase;
+}
+.article__p {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+.article_i{
+  font-style: italic;
+}
+.article__mark{
+  display: inline-block;
+  height: 48px;
+  background-color:rgb(216, 212, 212);
+}
+.article__list {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.71;
+  list-style-type:none; 
+}
+.list__mark{
+  float: left;
+  font-weight: 700;
+  position: relative;
+  max-width: 100%;
+}
+#open1,
+#open2,
+#open3,
+#open4 {
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+}
+#open1+.label, #open2+.label, #open3+.label, #open4+.label {
+  cursor: pointer;
+}
+#open1 +.label::before,#open2+.label::before,#open3+.label::before,#open4+.label::before  {
+  position: absolute;
+  top:0;
+  content: '+';
+  display: inline-block;
+  border: none;
+  background-color: #FFF;
+}
+
+#open1:checked+.label::before, #open2:checked+.label::before,#open3:checked+.label::before,#open4:checked+.label::before {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  border: none;
+  content:'-';
+  background-color: #FFF;
+}
+.field{
+  width:100vw;
+  height: 120px;
+  border: 1px solid rgba(128, 128, 128, 0.183);
+  display: none;
+  font-weight: 400;
+  color:grey;
+}
+
+#open1:checked+.label ~.field,#open2:checked+.label~.field, #open3:checked+.label~.field, #open4:checked+.label ~.field{
+display:block;
+}
