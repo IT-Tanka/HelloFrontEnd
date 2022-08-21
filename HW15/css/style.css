@@ -1,0 +1,291 @@
+body {
+  font-family: 'Gilroy Bold', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #070707;
+  max-width: 1445px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section,
+footer {
+  padding-top: 100px;
+}
+
+article {
+  padding-bottom: 70px;
+}
+
+article a {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 945px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header .container {
+  border-bottom: 1px solid #828282;
+}
+
+.header__menu {
+  letter-spacing: 0.02em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header__menu-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #828282;
+}
+
+.header__menu-ul :hover {
+  color: #070707;
+  transition: color 0.5s;
+}
+
+.header__menu-burger {
+  display: none;
+  width: 33px;
+  height: 19.19px;
+  background: url('../img/burger.svg') no-repeat center/contain;
+}
+
+.header__menu-burger-active {
+  background: url('../img/burger-active.svg') no-repeat center/contain;
+}
+
+.hero {
+  padding-top: 12px;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__title {
+  text-align: left;
+  font-size: 47px;
+  line-height: 58px;
+  margin-bottom: 50px;
+}
+
+.hero__desc {
+  font-family: 'Gilroy Medium';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hero__select {
+  margin: 0;
+  padding: 0;
+  transform: rotate(-90deg);
+}
+
+.select__lang {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.select__ru {
+  color: #828282;
+}
+
+.hero__image {
+  width: 100%;
+  height: 387px;
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about {
+  background-color: #F6F6F6;
+  padding-bottom: 70px;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__description {
+  margin-bottom: 30px;
+  max-width: 485px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills {
+  padding-bottom: 110px;
+}
+
+.skills__title {
+  margin-bottom: 20px;
+}
+
+.skills__description {
+  margin-bottom: 50px;
+}
+
+.skills__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills__li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 230px;
+  width: 170px;
+}
+
+.skills__li-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+  object-fit:contain;
+}
+
+.skills__li-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+
+.star-icon {
+  height: 26px;
+  width: 27px;
+ 
+}
+
+.skills__li-rate {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portfolio {
+  background-color: #F6F6F6;
+}
+
+.portfolio__title {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__page-img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.portfolio__page-link {
+  font-family: 'Gilroy Medium';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.contacts {
+  padding-bottom: 100px;
+}
+
+.footer__block {
+  text-align: center;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__btn {
+  width: 180px;
+  height: 44px;
+  background: #070707;
+  border-radius: 22px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.contacts__list {
+  gap: 50px;
+}
+
+.contacts__img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__block+.footer__block {
+  margin-top: 60px;
+}
+
+.contact__like {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #828282;
+}
