@@ -21,13 +21,16 @@
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Open Sans Bold";
-  src: url("../../assets/fonts/open-sans-bold_[allfont.ru].ttf") format("ttf");
+  src: url("../../assets/fonts/open-sans-bold/open-sans-bold.woff2") format("woff2"), 
+  url("../../assets/fonts/open-sans-bold/open-sans-bold.woff") format("woff"),
+  url("../../assets/fonts/open-sans-bold/open-sans-bold.ttf") format("ttf");
   font-weight: 500;
   font-style: normal;
 }
+
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../../assets/fonts/icons/icomoon.eot?hhlyg3');

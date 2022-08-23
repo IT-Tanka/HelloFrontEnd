@@ -210,9 +210,9 @@
   width: 20px;
 }
 .slider .card .card-right__btn {
-  font-family: "Open Sans";
+  font-family: "Open Sans Bold", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1;
   text-align: center;
