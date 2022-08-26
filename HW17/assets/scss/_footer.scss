@@ -1,0 +1,75 @@
+.footer {
+  background-color:   #F4F4F4;
+  padding: 70px 0 30px;
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__connect {
+  }
+  .connect__title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height:1.33;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .connect__mail{
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+  .connect__tel{
+    display: block;
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  &__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    &-link{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border:1px solid #565656;
+    font-size: 24px;
+    line-height: 50px;
+    color:#565656;
+    text-align: center;
+    transition: all 0.5s;
+      &:hover{
+        color:#fff;
+        background-color:#565656;
+      }
+    }
+  }
+  &__copyright {
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
