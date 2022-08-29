@@ -1,0 +1,63 @@
+$gold:#FFCC00;
+$grey: #898F8F;
+
+.header{
+  max-width: 450px;
+  padding-bottom: 40px;
+  margin: 0 auto 40px;
+  position: relative;
+
+  &__subtitle{
+    font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.33;
+      text-align: center;
+      text-transform: uppercase;
+      color:$grey;
+      margin: 0 auto 15px;
+
+  }
+  &__title{
+    font-family: 'Roboto Black';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 1.1;
+      text-align: center;
+      text-transform: uppercase;
+      color:$gold;
+      margin: 0 auto;
+  }
+    %line {
+      display: block;
+      width: 210px;
+      height: 1px;
+      content: " ";
+      background-color: $gold;
+      position: absolute;
+      bottom: 5px;
+    }
+  
+    &__left-line {
+      @extend %line;
+      right: 50%;
+      transform: translateX(-15px);
+    }
+  
+    &__right-line {
+      @extend %line;
+      left: 50%;
+      transform: translateX(15px);
+    }
+    &__img{
+      display: block;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      bottom: 0;
+      left:50%;
+      transform:translateX(-50%);
+    }
+}
