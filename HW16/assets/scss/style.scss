@@ -1,0 +1,43 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Montserrat Regular';
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #fff;
+  gap: 20px;
+
+  .main {
+    max-width: 1220px;
+
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@import '_sidebar';
