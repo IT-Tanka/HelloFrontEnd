@@ -1,0 +1,18 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 135px;
+  margin: 0 auto;
+}
+
+@import '_normalize';
+@import '_fonts';
+@import '_section';
+@import '_card';
+@import '_media';
