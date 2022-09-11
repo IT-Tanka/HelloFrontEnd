@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Red Hat Display';
-    src: local('Red Hat Display Bold'), local('Red-Hat-Display-Bold'),
-        url('RedHatDisplay-Bold.woff2') format('woff2'),
-        url('RedHatDisplay-Bold.woff') format('woff'),
-        url('RedHatDisplay-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
