@@ -1,0 +1,162 @@
+@use 'elems/titles-text';
+
+.video {
+  margin-top: 120px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__frame {
+    max-width: 970px;
+    width: 100%;
+    height: 601px;
+    padding: 31px 70px 31px 30px;
+    border: 1px solid #E4E4E4;
+    border-radius: 32px;
+    padding: 31px 70px 31px 30px;
+  }
+
+  .frame {
+    position: relative;
+
+
+    &:before {
+      width: 13px;
+      height: 13px;
+      display: block;
+      content: '';
+      position: absolute;
+      border: 1px solid #E4E4E4;
+      border-radius: 32px;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      border: 1px solid #E4E4E4;
+      border-radius: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(100% - 35px - 14px);
+      width: 35px;
+      height: 35px;
+    }
+
+    &__video {
+
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 8px;
+
+    }
+
+    &__img {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    &__play-img {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+
+    .play-img__icon {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+
+      & circle {
+        transition: all 0.5s;
+        fill: #586291;
+      }
+
+      & path {
+        transition: all 0.5s;
+        fill: #262A3F;
+      }
+    }
+
+    .play-img__icon:hover {
+      & circle {
+        fill: #262A3F;
+      }
+
+      & path {
+        fill: #586291;
+      }
+    }
+
+    .video__box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .video__text-content {
+    max-width: 897px;
+  }
+
+  .video__title {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width:768px) {
+  .video {
+    .frame {
+      height: 400px;
+
+      &__play-img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width:425px) {
+  .video {
+    margin-top: 60px;
+
+    .frame {
+      height: 250px;
+
+      &__video {
+
+        border-radius: 32px;
+      }
+
+      &__play-img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
