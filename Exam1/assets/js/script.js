@@ -21,9 +21,10 @@ window.addEventListener('resize', () => {
 window.addEventListener('scroll', () => {
   let st = document.documentElement.scrollTop;
   if (st > 30) {
-    header.style.background ='linear-gradient(270deg, rgba(228, 228, 228, 1) 0%, rgba(228, 228, 228, 0.2) 47.19%), rgba(228, 228, 228, 0.5)';
+    header.style.background = 'linear-gradient(270deg, rgba(228, 228, 228, 1) 0%, rgba(228, 228, 228, 0.2) 47.19%), rgba(228, 228, 228, 0.5)'; header.style.top='0';
   } else {
     header.style.background = 'linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02)';
+    header.style.top = '30px';
   }
 });
 
