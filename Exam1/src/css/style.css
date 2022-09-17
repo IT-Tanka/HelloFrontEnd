@@ -473,6 +473,11 @@ input {
   margin-bottom: 50px;
 }
 
+.hero .hero__link {
+  position: absolute;
+  z-index: 1;
+}
+
 .btn {
   display: inline-block;
   font-family: "Lato", sans-serif;
