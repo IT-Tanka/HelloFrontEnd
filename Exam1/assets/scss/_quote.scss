@@ -3,7 +3,7 @@
 
   &__container {
     background: linear-gradient(0deg, rgba(25, 28, 41, 0.84), rgba(25, 28, 41, 0.84)),
-      url('../img/quote-background.png') no-repeat center/cover;
+      url('../img/quote-background.webp') no-repeat center/cover;
     padding: 100px 5px 100px 160px;
   }
 
@@ -23,7 +23,7 @@
       display: block;
       width: 102px;
       height: 84px;
-      content: url('../img/quote-icon-pink.png');
+      content: url('../img/quote-icon-pink.webp');
       position: absolute;
       top: -30px;
       left: -60px;
@@ -45,7 +45,7 @@
 @media (max-width:768px) {
   .quote {
     background: linear-gradient(0deg, rgba(25, 28, 41, 0.84), rgba(25, 28, 41, 0.84)),
-      url('../img/quote-background.png') no-repeat center/cover;
+      url('../img/quote-background.webp') no-repeat center/cover;
       
     &__container {
       padding: 50px 5px 50px 80px;

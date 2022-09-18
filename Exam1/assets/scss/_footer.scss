@@ -34,9 +34,7 @@
   }
 
   &__text {
-
     font-weight: 400;
-
     line-height: 1.71;
     letter-spacing: 0.08em;
   }
@@ -44,7 +42,6 @@
 
 @media(max-width:768px) {
   .footer {
-
     &__container {
       flex-wrap: wrap;
       gap: 30px;

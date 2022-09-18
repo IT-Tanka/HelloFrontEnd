@@ -1,8 +1,11 @@
+$itext-light: #85BBB1;
+$text-light:#262A3F;
+
 .title {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
-  color: #262A3F;
+  color: $text-light;
 }
 
 .hero__title {
@@ -19,13 +22,10 @@
   font-style: italic;
 }
 
-.title__green-text {
-  color: #85BBB1;
+.title__color-text {
+  color: $itext-light;
 }
 
-.title__blue-text {
-  color: #689FF2;
-}
 
 .text {
   font-family: 'Lato';
@@ -33,7 +33,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 1.44;
-  color: #262A3F;
+  color: $text-light;
   opacity: 0.8;
 }
 
@@ -44,7 +44,7 @@
   }
 
   .section__title {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.2;
   }
 }

@@ -25,6 +25,7 @@
 
 @media(max-width:768px) {
   .benefits {
+    margin-top: 40px;
     &__container {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, minmax(100px, 1fr));
@@ -35,11 +36,5 @@
       align-self: center;
       margin: 0;
     }
-  }
-}
-
-@media(max-width:425px) {
-  .benefits {
-    margin-top:50px;
   }
 }

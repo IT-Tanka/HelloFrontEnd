@@ -4,8 +4,7 @@
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(9px);
   padding: 24px 0;
-
-  max-width:1440px;
+  max-width: 1440px;
   width: 100%;
   height: 80px;
   position: fixed;
@@ -13,6 +12,7 @@
   z-index: 3;
 
   &__wrp {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,38 +56,56 @@
   }
 
   &__burger {
-    position: absolute;
-    top: 25px;
-    right: 30px;
     display: none;
+  }
+
+  .change-theme-btn {
+    height: 32px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid #95939319;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__img {
+      height: 24px;
+    }
+
+    .sun-img {
+      width: 24px;
+    }
+
+    .moon-img {
+      width: 18px;
+      align-self: flex-end;
+    }
+
+    .sun-icon,
+    .moon-icon {
+      width: 100%;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    .sun-icon path {
+      stroke: #85BBB1;
+    }
+
+    .moon-icon path {
+      fill: #fff;
+    }
   }
 }
 
 @media(max-width:768px) {
   .header {
-    
-
-    &__logo {
-      width: 80px;
-      height: 24px;
-    }
-
     &__nav {
-      gap: 15px;
-    }
-  }
-}
-
-@media(max-width:568px) {
-  .header {
-
-    &__wrp {
-      flex-direction: column;
-      gap: 20px;
-      align-items: start;
-    }
-
-    &__nav {
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 15px;
       flex-direction: column;
       align-items: start;
       justify-content: start;
@@ -99,5 +117,11 @@
     &__burger {
       display: block;
     }
+
+    &__logo {
+      width: 80px;
+      height: 24px;
+    }
+
   }
 }

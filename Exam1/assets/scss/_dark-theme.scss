@@ -1,0 +1,165 @@
+$bg-dark: #161926;
+$itext-dark: #689FF2;
+$text-dark:rgba(255, 255, 255, 0.9);
+$btn-text-dark:#53F3CD;
+$hbtn-text-dark:#02E0AB;
+$big-btn-dark: #515773;
+$hbig-btn-dark:#02E0AB;
+
+
+body {
+
+  &.dark {
+    background-color: $bg-dark;
+    color: $text-dark;
+
+    .title,
+    .section__title {
+      color: #fff;
+    }
+
+    .text {
+      color: $text-dark;
+    }
+
+    .title__color-text {
+      color: $itext-dark;
+    }
+
+    .color-btn {
+      color: $btn-text-dark;
+
+      &:after {
+        background-color: $btn-text-dark;
+      }
+    }
+
+    .color-btn:hover {
+      color: $hbtn-text-dark;
+
+      &:after {
+        background-color: $hbtn-text-dark;
+      }
+    }
+
+    .big-color-btn {
+      border: 1px solid $big-btn-dark;
+
+      &:hover {
+        border: 1px solid $hbig-btn-dark;
+      }
+    }
+
+    .header {
+      .nav__link:hover {
+        text-decoration-color: #53f3ce58;
+      }
+
+      .sun-icon path {
+        stroke: #fff;
+      }
+
+      .moon-icon path {
+        fill: #689FF2;
+      }
+    }
+
+    .main {
+      background-image: linear-gradient(183.11deg, rgba(22, 25, 38, 0) 347.2px, #161926 470px), url('../img/first-screen-dark.webp');
+      background-repeat: no-repeat no-repeat;
+      background-position-y: 441px, 0;
+      background-size: 100%, 100%, 743px, contain;
+    }
+
+    @media(max-width:1155px) {
+      .main {
+        background-image: none;
+      }
+
+      .hero {
+        background-image: url('../img/first-screen-dark.webp');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+      }
+    }
+
+    .info {
+      &__card {
+        background-color: rgba(22, 25, 38, 0.9);
+      }
+
+      .list-item_num {
+        color: #fff;
+      }
+    }
+
+    .benefits {
+      .benefit {
+        border-top: 1px solid #515773;
+      }
+    }
+
+    .quote {
+      &__text {
+        &:before {
+          content: url('../img/quote-icon.webp');
+        }
+      }
+    }
+
+    .video {
+      .play-img__icon {
+        & circle {
+          fill: rgba(104, 159, 242, 0.3);
+        }
+
+        & path {
+          fill: #689FF2;
+        }
+      }
+
+      .play-img__icon:hover {
+        & circle {
+          fill: #689FF2;
+        }
+
+        & path {
+          fill: rgba(110, 121, 132, 0.9);
+        }
+      }
+    }
+
+    .promisies {
+      &__content {
+        background-color: rgba(22, 25, 38, 0.9);
+      }
+    }
+
+    .contact {
+      &__form {
+        border-top: 1px solid #515773;
+      }
+
+      .contact__input {
+        border-color: rgba(255, 255, 255, 0.1);
+        color: $text-dark;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+
+    .footer {
+      &__container {
+        border-top: 1px solid #515773;
+      }
+
+      &__copy,
+      &__text {
+        color: #fff;
+      }
+    }
+  }
+}

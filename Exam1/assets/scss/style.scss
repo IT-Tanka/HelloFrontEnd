@@ -1,66 +1,14 @@
-body {
-  background-color: white;
-  color: #262A3F;
-  font-family: 'Lato', sans-serif;
-  
-}
-
-.main {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  width: 100%;
-  background-image: url('../img/first-screen.png');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  position: relative;
-
-  &:after {
-    display: block;
-    width: 100%;
-    height: 825px;
-    position: absolute;
-    top: 496px;
-    content: '';
-    background: linear-gradient(183.11deg, rgba(255, 255, 255, 0) 46.73%, #FFFFFF 63.21%);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-  }
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media(max-width:1155px) {
-  .main {
-    background-image: none;
-
-    &:after {
-      display: none;
-    }
-  }
-}
-
-@media (max-width:768px) {
-  .container {
-    padding: 0 12px;
-  }
-}
-
-@import '_zero',
+@import '_zero', 
 '_fonts',
+'_global',
+ '_dark-theme',
 '_header',
 '_hero',
 '_info',
-'_benefits', 
-'_quote', 
-'_video', 
-'_promisies', 
+'_benefits',
+'_quote',
+'_video',
+'_promisies',
 '_reviews',
 '_contact',
 '_footer';
