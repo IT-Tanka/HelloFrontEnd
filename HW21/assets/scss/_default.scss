@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+p,
+h3,
+span,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: #9789F9;
+}
+
+.container {
+  max-width: 1370px;
+  padding-left: 85px;
+  padding-right: 85px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards-wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 700px;
+  gap: 30px;
+}
+
+@media(max-width:1024px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 700px);
+  }
+}
+
+@media(max-width:525px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
