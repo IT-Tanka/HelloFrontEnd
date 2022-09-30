@@ -1220,6 +1220,10 @@ body.dark .footer__text {
     line-height: 1.2;
   }
 
+  .header {
+    transition: all 0.8s;
+  }
+
   .header__nav {
     width: 100%;
     position: absolute;
@@ -1228,9 +1232,15 @@ body.dark .footer__text {
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    display: none;
     font-size: 18px;
     gap: 25px;
+    transition: all 1s;
+  }
+
+  .header .hide {
+    color: transparent;
+    scale: 0;
+    left: 100%;
   }
 
   .header__burger {

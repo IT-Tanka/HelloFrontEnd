@@ -9,8 +9,8 @@
   height: 80px;
   position: fixed;
   top: 30px;
-  left:50%;
-  transform:translate(-50%);
+  left: 50%;
+  transform: translate(-50%);
   z-index: 3;
 
   &__wrp {
@@ -102,6 +102,8 @@
 
 @media(max-width:768px) {
   .header {
+    transition: all 0.8s;
+
     &__nav {
       width: 100%;
       position: absolute;
@@ -110,9 +112,15 @@
       flex-direction: column;
       align-items: start;
       justify-content: start;
-      display: none;
       font-size: 18px;
       gap: 25px;
+      transition: all 1s;
+    }
+
+    .hide {
+      color: transparent;
+      scale: 0;
+      left: 100%;
     }
 
     &__burger {

@@ -11,20 +11,35 @@ const body=document.querySelector('.body');
 
 navLinks.forEach( link=>{
   link.addEventListener('click', ()=>{
-    if (burger.classList.contains('active')) { nav.style.display = 'none'; header.style.height = '80px'; }
+    if (burger.classList.contains('active')) { 
+      nav.classList.toggle('hide');
+      header.style.height = '80px'; 
+      burger.classList.remove('active');}
   });
 });
 
 burgerBtn.addEventListener('click', ()=>{
   burger.classList.toggle('active');
-  if (burger.classList.contains('active'))
-  { nav.style.display = 'flex'; header.style.height='100vh';}
-  else { nav.style.display = 'none'; header.style.height = '80px'; }
+  if (burger.classList.contains('active')){ 
+    nav.classList.remove('hide'); 
+    header.style.height='100vh';
+  }
+  else {  
+    nav.classList.add('hide');
+    header.style.height = '80px'; }
 });
 
+if (window.innerWidth <= '768') {
+  nav.classList.add('hide');
+}
 window.addEventListener('resize', () => {
-  if (window.innerWidth > '768') { nav.style.display = 'flex'; }
-  else { nav.style.display = 'none'; burger.classList.remove('active'); }
+  if (window.innerWidth > '768') { 
+    nav.classList.remove('hide'); 
+  }
+  else {
+    nav.classList.add('hide'); 
+    burger.classList.remove('active'); 
+  }
   header.style.height = '80px'; 
 });
 
@@ -48,6 +63,7 @@ video.addEventListener('click', ()=>{
   video.insertAdjacentHTML('afterbegin', 
   '<iframe class="video__box" src="https://www.youtube.com/embed/vnbN9V_2Guk?autoplay=1" title="YouTube video player" frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe > ');
 });
+
 changeThemeBtn.addEventListener('click', ()=>{
   changeThemeBtn.classList.toggle('darkTheme');
   body.classList.toggle('dark');
