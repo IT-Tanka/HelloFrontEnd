@@ -43,6 +43,16 @@
 @media(max-width:525px) {
   .footer {
     height: 400px;
-      padding: 103px 0 134px;
+    padding: 103px 0 103px;
+
+    .footer__row {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .footer__copyright {
+      margin: auto;
+      text-align: center;
+    }
   }
 }

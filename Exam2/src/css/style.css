@@ -987,6 +987,10 @@ logo-link {
     flex-direction: column;
   }
 
+  .form__btn {
+    margin: 40px auto 0;
+  }
+
   .contact__form {
     width: 100%;
     position: static;
@@ -1000,7 +1004,17 @@ logo-link {
 
   .footer {
     height: 400px;
-    padding: 103px 0 134px;
+    padding: 103px 0 103px;
+  }
+
+  .footer .footer__row {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .footer .footer__copyright {
+    margin: auto;
+    text-align: center;
   }
 }
 

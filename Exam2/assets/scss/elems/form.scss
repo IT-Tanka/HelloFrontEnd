@@ -43,10 +43,10 @@
     align-items: flex-end;
   }
 
-  &__input-wrp{
+  &__input-wrp {
     width: 100%;
-    position:relative;
-  } 
+    position: relative;
+  }
 
   &__input {
     width: 100%;
@@ -93,6 +93,10 @@
 
     &__content {
       flex-direction: column;
+    }
+
+    &__btn {
+      margin:40px auto 0;
     }
   }
 }
