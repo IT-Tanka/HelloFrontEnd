@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="manifest" href="favicon_io/site.webmanifest">
+  
 
   <link rel="stylesheet" href="libraries/normalize.css">
   <link rel="stylesheet" href="libraries/swiper-bundle.min.css" />
@@ -20,26 +21,25 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 
-<body class="body">
-  <header class="header" id="about">
-    <div class="header__panel">
+<body>
+  <header class="header header-on-start header-small" >
       <div class="container">
         <div class="header__nav">
-          <a href="" class="header__logo-link logo-link">
+          <a href="#" class="header__logo-link logo-link">
             <img src="src/img/logo.webp" alt="Monticello" class="header__logo-img logo-img">
           </a>
           <ul class="header__menu">
-            <li class="header__menu-item active-dot">
-              <a href="#about" class="header__menu-link" id="about1">ABOUT US</a>
-            </li>
-            <li class="header__menu-item" ">
-              <a href=" #projects" class="header__menu-link" id="projects1">PROJECTS</a>
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link">About us</a>
             </li>
             <li class="header__menu-item">
-              <a href="#news" class="header__menu-link" id="news1">NEWS</a>
+              <a href=" #projects" class="header__menu-link">Projects</a>
             </li>
             <li class="header__menu-item">
-              <a href="#contact" class="header__menu-link" id="contact1">CONTACT</a>
+              <a href="#news" class="header__menu-link">News</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#contact" class="header__menu-link">Contact</a>
             </li>
           </ul>
           <div class="header__social social">
@@ -75,53 +75,55 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="header__slider swiper">
-      <div class="header__slider-wrp  swiper-wrapper">
-        <div class="header__content swiper-slide">
-          <div class="container">
-            <h1 class="header__title">SIMPLE & MODERN</h1>
-            <h3 class="header__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
-          </div>
-        </div>
-        <div class="header__content swiper-slide">
-          <div class="container">
-            <h1 class="header__title">BEAUTY OF THE GREAT</h1>
-            <h3 class="header__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
-          </div>
-        </div>
-        <div class="header__content swiper-slide">
-          <div class="container">
-            <h1 class="header__title">SIMPLE & MODERN</h1>
-            <h3 class="header__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
-          </div>
-        </div>
-        <div class="header__content swiper-slide">
-          <div class="container">
-            <h1 class="header__title">BEAUTY OF THE GREAT</h1>
-            <h3 class="header__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
-          </div>
-        </div>
-        <div class="header__content swiper-slide">
-          <div class="container">
-            <h1 class="header__title">HYPNOTIZE YOURSELF</h1>
-            <h3 class="header__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
-          </div>
-        </div>
-      </div>
-      <div class="header__pagination"></div>
-    </div>
-    <a href="#projects" class="header__arrow-btn arrow__btn" id="projects2"></a>
   </header>
   <main class="main">
-    <section class="section projects-section" id="projects">
+    <section class="hero" id="about">
+      <div class="hero__slider swiper">
+        <div class="hero__slider-wrp  swiper-wrapper">
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">SIMPLE & MODERN</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">BEAUTY & GREAT</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">SIMPLE & MODERN</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">BEAUTY & GREAT</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">SIMPLE & MODERN</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+        </div>
+        <div class="hero__pagination"></div>
+        <a href="#about" class="hero__slider-next  arrow__btn "></a>
+      </div>
+      
+    </section>
+    <section class="section projects" id="projects">
       <div class="container">
         <h2 class="section__title title">
           WHAT WE DO
         </h2>
         <div class="section__project project project1">
-          <div class="project__img">
-            <img src="src/img/projects1.webp" alt="futuristic white building">
+          <div class="project__image">
+            <img src="src/img/projects1.webp" class="project__img"  alt="futuristic white building">
           </div>
           <div class="project__content">
             <h3 class="project__subtitle">ONE WORLD</h3>
@@ -137,9 +139,6 @@
           </div>
         </div>
         <div class="section__project project project2">
-          <div class="project__img">
-            <img src="src/img/projects2.webp" alt="brown building">
-          </div>
           <div class="project__content">
             <h3 class="project__subtitle">INTERNATIONAL</h3>
             <h2 class="project__title title">COMMERCE CENTRE</h2>
@@ -153,17 +152,20 @@
               <span class="project__location-address">Hong Kong - 1588 feet</span>
             </p>
           </div>
+          <div class="project__image">
+            <img src="src/img/projects2.webp" class="project__img" alt="brown building">
+          </div>
         </div>
       </div>
     </section>
-    <section class="section news-section" id="news">
+    <section class="section news" id="news">
       <div class="container">
         <h2 class="news__title section__title title">
           LATEST NEWS
         </h2>
         <div class="news__slider swiper ">
           <div class="news__slider-wrp  swiper-wrapper">
-            <div class="news__card card swiper-slide">
+            <a class="news__card card swiper-slide">
               <img src="src/img/news-card1.webp" alt="corner of building with big window" class="card__img">
               <div class="card__content">
                 <h4 class="card__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
@@ -179,8 +181,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="news__card card swiper-slide">
+            </a>
+            <a class="news__card card swiper-slide">
               <img src="src/img/news-card2.webp" alt="corner of building with big window" class="card__img">
               <div class="card__content">
                 <h4 class="card__title">EFFECTIVE ADVERTISING POINTERS.</h4>
@@ -195,8 +197,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="news__card card swiper-slide">
+            </a>
+            <a class="news__card card swiper-slide">
               <img src="src/img/news-card3.webp" alt="corner of building with big window" class="card__img">
               <div class="card__content">
                 <h4 class="card__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
@@ -211,8 +213,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="news__card card swiper-slide">
+            </a>
+            <a class="news__card card swiper-slide">
               <img src="src/img/news-card1.webp" alt="corner of building with big window" class="card__img">
               <div class="card__content">
                 <h4 class="card__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
@@ -228,8 +230,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="news__card card swiper-slide">
+            </a>
+            <a class="news__card card swiper-slide">
               <img src="src/img/news-card3.webp" alt="corner of building with big window" class="card__img">
               <div class="card__content">
                 <h4 class="card__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
@@ -244,7 +246,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="news__pagination"></div>
         </div>
@@ -254,32 +256,32 @@
         </div>
       </div>
     </section>
-    <section class="section gallery-section" id="gallery">
+    <section class="section gallery" id="gallery">
       <div class="container">
         <h2 class="section__title title">
           GALLERY
         </h2>
         <div class="gallery__wrp">
           <div class="gallery__item item1">
-            <img data-fancybox="gallery" src="src/img/gallery1.webp" alt="rounded building">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery1.webp" alt="rounded building">
           </div>
           <div class="gallery__item item2">
-            <img data-fancybox="gallery" src="src/img/gallery_2.webp" alt="high-rise building">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_2.webp" alt="high-rise building">
           </div>
           <div class="gallery__item item3">
-            <img data-fancybox="gallery" src="src/img/gallery_3.webp" alt="corner of a red brick building">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_3.webp" alt="corner of a red brick building">
           </div>
           <div class="gallery__item item4">
-            <img data-fancybox="gallery" src="src/img/gallery_4.webp" alt="rounded building">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_4.webp" alt="rounded building">
           </div>
           <div class="gallery__item item5">
-            <img data-fancybox="gallery" src="src/img/gallery_5.webp" alt="white building in the form of a cube">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_5.webp" alt="white building in the form of a cube">
           </div>
         </div>
         <a href="#" class="gallery__link btn">SEE MORE</a>
       </div>
     </section>
-    <section class="section contact-section" id="contact">
+    <section class="section contact" id="contact">
       <div class="contacts__map" id="map">
       </div>
       <form action="" class="contact__form form">
@@ -290,7 +292,7 @@
           </div>
           <div class="form-right">
             <div class="form__input-wrp">
-              <input type="text" id="name" placeholder="Name" value="Mollie Medina"
+              <input type="text" id="name" placeholder="Name" 
                 class="form__input form__input-name">
             </div>
             <div class="form__input-wrp">
@@ -306,8 +308,8 @@
     <div class="container">
       <div class="footer__content">
         <div class="footer__row">
-          <a href="" class="header__logo-link">
-            <img src="src/img/logo.webp" alt="Monticello" class="header__logo-img logo-img">
+          <a href="" class="footer__logo-link">
+            <img src="src/img/logo.webp" alt="Monticello" class="footer__logo-img logo-img">
           </a>
           <div class="footer__social social">
             <a href="#" class="footer__social-link social-link">
@@ -341,7 +343,7 @@
     </div>
   </footer>
   <script src="libraries/fancybox.min.js"></script>
-  <script src="src/js/script.min.js"></script>
+  <script src="src/js/script.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWgIzpzkPU28gJrL08VUVEC7BMwRjsYec&language=en&callback=initMap&v=weekly">
     </script>

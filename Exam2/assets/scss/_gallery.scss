@@ -1,7 +1,8 @@
-.gallery-section {
+.gallery {
   padding-top: 30px;
 
-  .gallery__wrp {
+  &__wrp {
+    cursor: url('../img/zoom.svg'), pointer;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr;
@@ -9,6 +10,15 @@
     grid-template-areas:
       ' item1 item2 item3'
       ' item1 item4 item5';
+
+    .gallery__item {
+      .item__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
 
     .item1 {
       grid-area: item1;
@@ -30,9 +40,6 @@
       grid-area: item5;
     }
 
-    .gallery__item {
-      cursor: url('../img/zoom.svg'), pointer;
-    }
   }
 }
 
@@ -49,20 +56,18 @@
   margin-top: 60px;
 }
 
-@media(max-width:768px) {
-  .gallery-section {
+@media (max-width:768px) {
+  .gallery {
     .gallery__wrp {
-      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      grid-template-areas:
-        'item2 item3'
-        'item4 item5';
+      grid-template-rows: 2fr 1fr 1fr;
+      grid-template-areas: "item1 item1"
+        "item2 item3"
+        "item4 item5";
     }
 
-    .item1 {
-      display: none;
-    }
   }
 
   .fancybox__container img {

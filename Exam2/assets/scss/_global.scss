@@ -1,17 +1,10 @@
-body {
-  max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
 }
 
-logo-link {
+.logo-link {
   display: block;
   height: 54px;
   width: 241px;
@@ -32,7 +25,6 @@ logo-link {
 }
 
 .section__title {
-
   margin-bottom: 90px;
   position: relative;
 
@@ -74,7 +66,10 @@ logo-link {
 }
 
 @media(max-width: 768px) {
-  .section+.section {
-    margin-top: 55px;
+  .section__title {
+    margin-bottom: 55px;
   }
-}
+    .section+.section {
+      margin-top: 55px;
+    }
+  }

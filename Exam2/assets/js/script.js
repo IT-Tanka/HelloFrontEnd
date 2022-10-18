@@ -1,13 +1,15 @@
-const header = document.querySelector('.header');
+// HEADER
+
+const hero = document.querySelector('.hero');
 let headerLinks = document.querySelectorAll('.header__menu-link');
-const headerBtn = document.querySelector('.header__arrow-btn');
-const headerPanel = document.querySelector('.header__panel');
+const header = document.querySelector('.header');
 const burger = document.querySelector('.burger__btn');
-const nav = document.querySelector('.header__menu');
-const headerHight = header.offsetHeight;
+const headerMenu = document.querySelector('.header__menu');
+const headerStartTop = 53;
+const headerHeight = 54;
+
 
 headerLinks = Array.from(headerLinks);
-headerLinks.push(headerBtn);
 headerLinks[0].classList.add('hover-link', 'active-link');
 
 headerLinks.forEach((headerLink, index) => {
@@ -28,10 +30,10 @@ headerLinks.forEach((headerLink, index) => {
         burger.classList.remove('active');
         closeBurgerMenu();
       }
-      const blockID = headerLink.getAttribute('href');
-      const scrollTarget = document.querySelector(blockID);
+      const sectionID = headerLink.getAttribute('href');
+      const scrollTarget = document.querySelector(sectionID);
       const elementPosition = scrollTarget.getBoundingClientRect().top;
-      const offsetPosition = elementPosition - 54;
+      const offsetPosition = elementPosition - headerHeight;
 
       window.scrollBy({
         top: offsetPosition,
@@ -52,15 +54,13 @@ headerLinks.forEach((headerLink, index) => {
 
 window.addEventListener('scroll', event => {
   let fromTop = window.scrollY;
-  if (fromTop > headerHight) {
-    headerPanel.style.position = 'fixed';
-    headerPanel.style.top = '0';
-    headerPanel.style.background = 'linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%)';
+  if (fromTop > headerStartTop) {
+    header.classList.add('header-on-scroll');
+    header.classList.remove('header-on-start');
   }
   else {
-    headerPanel.style.position = 'absolute';
-    headerPanel.style.background = 'transparent';
-    headerPanel.style.top = '53px';
+    header.classList.remove('header-on-scroll');
+    if (!header.classList.contains('header-on-start')) { header.classList.add('header-on-start'); }
   }
   headerLinks.forEach(link => {
     let section = document.querySelector(link.hash);
@@ -75,25 +75,20 @@ window.addEventListener('scroll', event => {
   });
 });
 function closeBurgerMenu() {
-  nav.style.left = '-100px';
-  nav.style.top = '74px';
-  headerPanel.style.height = '54px';
-  headerPanel.style.top = '0';
-  headerPanel.style.paddingTop = '0';
+  headerMenu.style.left = '-100px';
+  header.classList.remove('header-big');
+  header.classList.add('header-small');
   let fromTop = window.scrollY;
-  if (fromTop <= headerHight) {
-    headerPanel.style.background = 'transparent';
-    headerPanel.style.top = '53px';
+  if (fromTop <= headerStartTop) {
+    header.classList.remove('header-on-scroll');
+    header.classList.add('header-on-start');
   }
 }
 
 function openBurgerMenu() {
-  nav.style.left = '25px';
-  nav.style.top = '127px';
-  headerPanel.style.height = '100vh';
-  headerPanel.style.top = '0';
-  headerPanel.style.paddingTop = '53px';
-  headerPanel.style.background = 'linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%)';
+  headerMenu.style.left = '25px';
+  header.classList.remove('header-small');
+  header.classList.add('header-big');
 }
 
 burger.addEventListener('click', () => {
@@ -106,16 +101,30 @@ burger.addEventListener('click', () => {
   }
 });
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth > '768') {
-    closeBurgerMenu();
-    burger.classList.remove('active');
-  }
+
+// SLIDERS
+
+const heroSlider = new Swiper('.hero__slider', {
+  loop: true,
+  direction: "vertical",
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.hero__pagination',
+  },
+  navigation: {
+    nextEl: '.hero__slider-next',
+  },
+  slidesPerView: 1,
+  spaceBetween: 5,
 });
+if (window.innerWidth <= '768') {
+  heroSlider.disable();
+  document.querySelector('.hero__slider-next').style.display = 'none';
+}
 
-
-// SLIDER
-const swiper = new Swiper('.news__slider', {
+const newsSlider = new Swiper('.news__slider', {
   loop: true,
 
   pagination: {
@@ -131,59 +140,42 @@ const swiper = new Swiper('.news__slider', {
   spaceBetween: 30,
   breakpoints: {
 
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
     },
-    480: {
+    424: {
       slidesPerView: 1,
-      // spaceBetween: 20
     },
-    540: {
-      slidesPerView: 1,
-      // spaceBetween: 100
-    },
-    640: {
+    525: {
       slidesPerView: 2,
-      // spaceBetween: 10
     },
     768: {
-      slidesPerView: 2,
-      // spaceBetween: 30
-    },
-    1024: {
       slidesPerView: 3,
-      // spaceBetween: 10
-    },
-    1170: {
-      slidesPerView: 3,
-      // spaceBetween: 30
     },
   },
 });
 
-const headerSwiper = new Swiper('.header__slider', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-  pagination: {
-    el: '.header__pagination',
-  },
-  slidesPerView: 1,
-  spaceBetween: 30,
-
-});
 const swiperPrev = document.querySelector('.news__slider-left');
 const swiperNext = document.querySelector('.news__slider-right');
 
 swiperPrev.addEventListener('click', () => {
-  swiper.slidePrev();
+  newsSlider.slidePrev();
 });
 swiperNext.addEventListener('click', () => {
-  swiper.slideNext();
+  newsSlider.slideNext();
 });
 
+window.addEventListener('resize', () => {
+  if (window.innerWidth > '768') {
+    closeBurgerMenu();
+    burger.classList.remove('active');
+    heroSlider.enable();
+    document.querySelector('.hero__slider-next').style.display = 'block';
+  } else {
+    heroSlider.disable();
+    document.querySelector('.hero__slider-next').style.display = 'none';
+  }
+});
 
 // FORM
 const contactForm = document.querySelector('.contact__form');
@@ -201,8 +193,8 @@ function error(message, element) {
   errorEl.style.position = 'absolute';
   errorEl.style.bottom = '-20px';
   errorEl.style.left = '0';
-
 }
+
 function clear() {
   this.style.borderColor = '#737171';
   if (this.nextSibling && this.nextSibling.className == 'error') {
@@ -218,7 +210,7 @@ function checkEmail() {
 }
 
 function checkName() {
-  let result = !/^[a-zA-Z0-9_-]+( [a-zA-Z0-9_-]+)*|[а-яА-Я0-9_-]+( [а-яА-Я0-9_-]+)*$/.test(ename.value);
+  let result = !/^[a-zA-Z_-]+( [a-zA-Z_-]+)*|[а-яА-Я_-]+( [а-яА-Я_-]+)*$/.test(ename.value);
   if (!ename.value || result) {
     error('name', ename); return false;
   } else return true;
