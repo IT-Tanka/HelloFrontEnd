@@ -334,7 +334,7 @@ img {
 .hero__slider-next {
   display: block;
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -345,7 +345,7 @@ img {
   height: 200px;
   position: absolute;
   top: 36, 895%;
-  left: 95%;
+  left: 96.75%;
 }
 
 .hero .hero__pagination .swiper-pagination-bullet {
@@ -398,6 +398,10 @@ img {
   padding-top: 30px;
 }
 
+.projects__title {
+  margin-bottom: 147px;
+}
+
 .projects .project {
   display: flex;
   justify-content: space-between;
@@ -422,7 +426,8 @@ img {
 .projects .project__image:before {
   display: block;
   content: "";
-  width: 585px;
+  max-width: 585px;
+  width: 100%;
   height: 470px;
   position: absolute;
   z-index: -1;
@@ -488,11 +493,11 @@ img {
 
 .projects .project1 .project__image:before {
   background-color: #55B7FF;
-  left: -215px;
+  left: -35%;
 }
 
 .projects .project2 {
-  margin-top: 112px;
+  margin-top: 169px;
 }
 
 .projects .project2 .project__content {
@@ -501,7 +506,7 @@ img {
 
 .projects .project2 .project__image:before {
   background-color: #7E5AFF;
-  left: 260px;
+  right: -35%;
 }
 
 .card {
@@ -813,6 +818,12 @@ img {
   position: relative;
 }
 
+.footer__container {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .footer:after {
   display: block;
   content: "";
@@ -849,9 +860,41 @@ img {
   color: #FFFFFF;
 }
 
-@media (max-width: 1600px) {
-  .projects .project__image:before {
-    display: none;
+@media (max-width: 1599px) {
+  .projects .project1 .project__image:before {
+    left: -20%;
+  }
+
+  .projects .project2 .project__image:before {
+    right: -20%;
+  }
+}
+
+@media (max-width: 1424px) {
+  .projects .project1 .project__image:before {
+    left: -10%;
+  }
+
+  .projects .project2 .project__image:before {
+    right: -10%;
+  }
+}
+
+@media (max-width: 1298px) {
+  .projects .project1 .project__image:before {
+    left: -5%;
+  }
+
+  .projects .project2 .project__image:before {
+    right: -5%;
+  }
+
+  .projects .project1 .project__image:before {
+    left: 0;
+  }
+
+  .projects .project2 .project__image:before {
+    right: 0;
   }
 }
 
@@ -903,6 +946,13 @@ img {
 @media (max-width: 915px) {
   .header__menu {
     gap: 33px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
