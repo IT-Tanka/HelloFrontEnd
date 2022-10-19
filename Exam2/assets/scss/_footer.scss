@@ -3,6 +3,12 @@
   background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   position: relative;
 
+  &__container {
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   &:after {
     display: block;
     content: '';
@@ -39,7 +45,14 @@
     color: #FFFFFF;
   }
 }
-
+@media(max-width:800px){
+  .footer{
+    &__container{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+} 
 @media(max-width:525px) {
   .footer {
     height: 400px;
