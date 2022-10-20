@@ -1,0 +1,69 @@
+.quote {
+  margin-top: 120px;
+
+  &__container {
+    background: linear-gradient(0deg, rgba(25, 28, 41, 0.84), rgba(25, 28, 41, 0.84)),
+      url('../img/quote-background.webp') no-repeat center/cover;
+    padding: 100px 5px 100px 160px;
+  }
+
+  &__text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.44;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    max-width: 710px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:before {
+      display: block;
+      width: 102px;
+      height: 84px;
+      content: url('../img/quote-icon-pink.webp');
+      position: absolute;
+      top: -30px;
+      left: -60px;
+
+    }
+  }
+
+  &__author {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width:768px) {
+  .quote {
+    background: linear-gradient(0deg, rgba(25, 28, 41, 0.84), rgba(25, 28, 41, 0.84)),
+      url('../img/quote-background.webp') no-repeat center/cover;
+      
+    &__container {
+      padding: 50px 5px 50px 80px;
+      background: none;
+    }
+
+    &__text {
+      font-size: 22px;
+    }
+
+    &__author {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width:425px) {
+  .quote {
+    margin-top: 60px;
+  }
+}

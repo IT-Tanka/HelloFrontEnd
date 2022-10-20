@@ -1,0 +1,32 @@
+.hero {
+
+  padding-top: 260px;
+  padding-bottom: 143px;
+
+  &__content {
+    max-width: 523px;
+  }
+
+  .hero__subtitle {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media(max-width:1170px) {
+  .hero {
+    background-image: url('../img/first-screen.webp');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+@media (max-width:768px) {
+  .hero {
+    &__content {
+      max-width: 430px;
+    }
+  }
+}

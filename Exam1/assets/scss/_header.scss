@@ -1,0 +1,136 @@
+@import 'elems/burger';
+
+.header {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(9px);
+  padding: 24px 0;
+  max-width: 1440px;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 3;
+
+  &__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__logo {
+    margin-right: 30px;
+    width: 107px;
+    height: 32px;
+  }
+
+  .logo__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.08em;
+
+    .nav__link {
+      text-decoration-color: transparent;
+      transition: text-decoration 0.8s;
+    }
+
+    .nav__link:hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      text-decoration-color: rgba(241, 137, 123, 0.3);
+      text-decoration-thickness: 3px;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  .change-theme-btn {
+    height: 32px;
+    width: 60px;
+    border-radius: 8px;
+    border: 1px solid #95939319;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__img {
+      height: 24px;
+    }
+
+    .sun-img {
+      width: 24px;
+    }
+
+    .moon-img {
+      width: 18px;
+      align-self: flex-end;
+    }
+
+    .sun-icon,
+    .moon-icon {
+      width: 100%;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    .sun-icon path {
+      stroke: #85BBB1;
+    }
+
+    .moon-icon path {
+      fill: #fff;
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .header {
+    transition: all 0.8s;
+
+    &__nav {
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 15px;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      font-size: 18px;
+      gap: 25px;
+      transition: all 1s;
+    }
+
+    .hide {
+      color: transparent;
+      scale: 0;
+      left: 100%;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__logo {
+      width: 80px;
+      height: 24px;
+    }
+
+  }
+}

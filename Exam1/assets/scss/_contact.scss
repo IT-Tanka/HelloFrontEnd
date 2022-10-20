@@ -1,0 +1,119 @@
+.contact {
+
+  margin-top: 100px;
+
+  &__form {
+    padding-top: 60px;
+    border-top: 1px solid #E4E4E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .form__left {
+    align-self: flex-start;
+
+    .form__title {
+      margin-bottom: 29px;
+    }
+
+    .form__subtitle {
+      max-width: 470px;
+    }
+  }
+
+  .form__right {
+    align-self: center;
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 40px;
+
+    .contact__input {
+      border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+      height: 32px;
+      width: 100%;
+      padding: 10px;
+      outline: none;
+      padding: 5px;
+
+      &::placeholder {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.11;
+        letter-spacing: 0.08em;
+        color: #262A3F;
+        opacity: 0.5;
+      }
+    }
+
+    .contact__input:focus {
+      border: 1px solid #262a3f61;
+
+      &:invalid {
+        border: 1px solid rgba(255, 0, 0, 0.338);
+      }
+
+      &:invalid:required {
+        background-color: rgba(255, 192, 203, 0.256);
+      }
+
+      &:valid {
+        border: 1px solid rgba(0, 0, 0, 0.442);
+        background-color: rgba(121, 130, 177, 0.094);
+      }
+    }
+
+    .contact__btn {
+      align-self: start;
+    }
+  }
+}
+
+@media(max-width:1024px) {
+  .contact {
+    .form__left {
+      align-self: center;
+      max-width: 270px;
+    }
+
+    .form__title {
+      font-size: 26px;
+    }
+
+    .form__subtitle {
+      font-size: 16px;
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .contact {
+    &__form {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .form__left {
+      align-self: center;
+      max-width: none;
+    }
+
+
+    .form__subtitle {
+      font-size: 18px;
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .contact {
+    margin-top: 50px;
+  }
+}

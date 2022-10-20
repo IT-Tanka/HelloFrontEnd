@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam1</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="libraries/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/script.js" defer></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container header__wrp">
+      <div class="header__logo">
+        <img src="src/img/logo.png" alt="Solis" class="logo__img">
+      </div>
+      <button class="change-theme-btn">
+        <div class="change-theme-btn__img sun-img">
+          <svg class="sun-icon change-theme-btn__img" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="m24 2.5-2.375 6.6875c0.77403-0.12337 1.5664-0.1875 2.375-0.1875s1.601 0.06413 2.375 0.1875l-2.375-6.6875zm-15.188 6.2812 3.0312 6.4375c0.93528-1.2902 2.0848-2.4397 3.375-3.375l-6.4062-3.0625zm30.406 0-6.4375 3.0625c1.2902 0.93528 2.4397 2.0848 3.375 3.375l3.0625-6.4375zm-30.031 12.812-6.6875 2.375 6.6875 2.375c-0.12016-0.76423-0.1875-1.5459-0.1875-2.3438 0-0.81938 0.06089-1.6224 0.1875-2.4062zm29.625 0.03125c0.12337 0.77403 0.1875 1.5664 0.1875 2.375s-0.06413 1.601-0.1875 2.375l6.6875-2.375-6.6875-2.375zm-26.969 11.156-3.0312 6.4062 6.4062-3.0312c-1.2902-0.93528-2.4397-2.0848-3.375-3.375zm24.312 0c-0.92646 1.278-2.0686 2.4136-3.3438 3.3438l6.4062 3.0625-3.0625-6.4062zm-14.531 6.0312 2.375 6.6875 2.375-6.6875c-0.77403 0.12337-1.5664 0.1875-2.375 0.1875s-1.601-0.06413-2.375-0.1875z"
+              fill="none" stroke="none" stroke-linecap="square" stroke-width=".9" />
+            <path transform="matrix(.77806 -1.0613 1.0613 .77806 67.48 3.6413)"
+              d="m-22.5-17.5a9.5 9.5 0 1 1 -19 0 9.5 9.5 0 1 1 19 0z" fill="none" stroke="#000"
+              stroke-dasharray="0.75991078999999984, 0.75991078999999984" stroke-linecap="square" stroke-width=".75991" />
+          </svg>
+        </div>
+        <div class="change-theme-btn__img moon-img">
+          <svg class="moon-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64"
+            enable-background="new 0 0 64 64" xml:space="preserve">
+            <path id="Moon" d="M63.4374046,38.4606323c-0.4258003-0.2060013-0.9384995-0.0848999-1.2276001,0.2910995
+              	c-1.2803001,1.6650009-2.9452972,3.2001991-4.9501991,4.5625c-11.6180992,7.8808022-27.544899,4.9248009-35.4971008-6.5956993
+              	c-7.8154011-11.3204002-4.9902-26.9736996,6.2968998-34.8936005c0.3799-0.2666,0.5263996-0.7588,0.3544998-1.1895001
+              	c-0.1728001-0.4316-0.625-0.6835-1.0771008-0.6181c-4.6474991,0.6953-9.2070999,2.4902-13.1875,5.1893997
+              	C6.9706059,10.0759325,2.1415057,17.427433,0.5526057,25.9079323c-1.582,8.4414024,0.2402,16.9932022,5.1308002,24.0791016
+              	c6.2872,9.1054993,16.4864006,14.0058975,26.8554993,14.0058975c6.3173981,0,12.6982994-1.819397,18.2939987-5.6161995
+              	c6.5800018-4.461998,11.2461014-11.1298981,13.1406021-18.7753983
+              	C64.0877075,39.142334,63.8631058,38.6657333,63.4374046,38.4606323z M49.7098045,56.7224312
+              	c-13.8710976,9.410099-32.8847961,5.8828011-42.3798981-7.872097c-4.5858998-6.642601-6.2948999-14.660202-4.8114996-22.5742016
+              	C4.0086055,18.3239326,8.5379057,11.4294329,15.2723055,6.861033c2.5801001-1.75,5.4189997-3.0937002,8.3643007-3.9726
+              	c-9.3916006,9.0702991-11.1416006,23.9258003-3.5205002,34.9668007
+              	c8.5741997,12.4188995,25.7422009,15.6094017,38.2666016,7.1133003c0.8260994-0.5606003,1.5996017-1.149498,2.3182983-1.764698
+              	C58.4803047,48.6472321,54.6766052,53.3542328,49.7098045,56.7224312z" fill="none" />
+          </svg>
+        </div>
+      </button>
+      <div class="header__burger">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul class="header__nav">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Use Cases</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Resources</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container ">
+        <div class="hero__content">
+          <h1 class="title hero__title">A peer-to-peer stablecoin <span
+              class="title__i-text title__color-text">clearinghouse</span> for the new economy</h1>
+          <p class="hero__subtitle text">We are bringing real solutions to the payments world by leveraging public
+            blockchains.</p>
+          <a href="#" class="hero__link btn color-btn ">JOIN NOW</a>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="wrapper info__container">
+        <div class="info__card">
+          <div class="card__wrp">
+            <div class="info__card-left">
+              <ul class="info__list">
+                <li class="info__list-item">
+                  <span class="list-item_s">$</span>
+                  <span class="list-item_num">1 tril</span>
+                  <p class="list-item__text text">Market cap potential</p>
+                </li>
+                <li class="info__list-item">
+                  <span class="list-item_s">$</span>
+                  <span class="list-item_num">3.65 mil</span>
+                  <p class="list-item__text text">Deposited to platform</p>
+                </li>
+                <li class="info__list-item">
+                  <span class="list-item_num">12</span>
+                  <p class="list-item__text text">Stablecoins</p>
+                </li>
+              </ul>
+            </div>
+            <div class="info__card-right">
+              <p class="info__text text">Solis group is a new venture created with investments from and collaboration
+                with XBTO
+                International, XBTO Ventures and
+                Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a first-of-its-kind clearing house
+                for
+                stablecoins
+                that seeks to promote the next phase of the market’s development.
+              </p>
+              <p class="info__text text">The API-enabled, centralized platform addresses the key issues of inconsistent
+                liquidity,
+                stability and accessibility
+                which are currently preventing the stablecoin market from reaching critical mass.
+              </p>
+              <a href="#" class="info__link btn color-btn ">Contact sales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container benefits__container">
+        <div class="benefit">
+          <h3 class="benefit__title title section__title">Qualified <span
+              class="title__i-text title__color-text">traders</span> and liquidty <span
+              class="title__i-text title__color-text">solutions</span>
+          </h3>
+          <p class="benefit__description text">Trade easily and efficiently between 12 stablecoins, including USDT,
+            TrueUSD, Dai, Eurs and Gemini Dollar.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title title section__title">Settlement/OTC API and <span
+              class="title__i-text title__color-text">integration</span>
+          </h3>
+          <p class="benefit__description text">Integrate OTC operations and settlements using our efficient API.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title title section__title">The best <span
+              class="title__i-text title__color-text">payments solutions</span>
+          </h3>
+          <p class="benefit__description text">For all stablecoin payments, from point-of-sale transactions to website
+            solutions. If you use stablecoins in your
+            business, Stablehouse is for you.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3 class="benefit__title title section__title"><span class="title__i-text title__color-text">Treasury</span>
+            and <span class="title__i-text title__color-text">returns</span> for stablecoin stores
+          </h3>
+          <p class="benefit__description text">For all stablecoin payments, from point-of-sale transactions to website
+            solutions. If you use stablecoins in your
+            business, Stablehouse is for you.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="container">
+        <div class="quote__container">
+          <p class="quote__text">Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and
+            exchanges
+            certainty over access and
+            liquidity
+          </p>
+          <span class="quote__author">Lennon Burnett, Solis Group CEO</span>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container video__container">
+        <div class="video__frame frame">
+          <div class="frame__video">
+            <div class="frame__play-img">
+              <svg class="play-img__icon" width="120" height="120" viewBox="0 0 120 120" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.3" cx="60" cy="60" r="60" fill="" />
+                <path
+                  d="M81.3175 58.615C82.0301 58.9898 82.0301 60.0102 81.3175 60.385L50.7155 76.4826C50.0496 76.8329 49.25 76.35 49.25 75.5976L49.25 43.4024C49.25 42.65 50.0496 42.1671 50.7155 42.5174L81.3175 58.615Z"
+                  fill="" />
+              </svg>
+            </div>
+            <picture>
+              <source srcset="src/img/alternative-screensaver.webp" media="(max-width: 425px)" />
+              <img class="frame__img" src="src/img/screensaver-video.png" alt="scheme" />
+            </picture>
+          </div>
+
+        </div>
+        <div class="video__text-content">
+          <h3 class="video__title title section__title">A <span class="title__i-text title__color-text">powerful
+              API</span> , easy to use user interface</h3>
+          <p class="video__description text">Our API allows all members to interact with Stablehouse’s platform, from
+            effecting transfers to deposits, withdrawals,
+            creation and redemption and reporting.</p>
+        </div>
+      </div>
+    </section>
+    <section class="promisies">
+      <div class="container">
+        <div class="promisies__container">
+          <div class="promisies__content">
+            <div class="promise">
+              <h3 class="promise__title title">
+                On-Exchange Trading
+              </h3>
+              <p class="promise__description text">Instant <br>
+                Passive Inventory earns fees</p>
+            </div>
+            <div class="promise">
+              <h3 class="promise__title title">
+                On-Chain Swaps
+              </h3>
+              <p class="promise__description text">
+                Low Counterparty risk <br> Direct transfers
+              </p>
+            </div>
+            <div class="promise">
+              <h3 class="promise__title title">
+                Time Settlement Swaps
+              </h3>
+              <p class="promise__description text">
+                LBTC / Lightning and other sidechain swaps
+              </p>
+            </div>
+            <div class="promise promise__btn">
+              <a href="#" class="promise__link btn color-btn big-color-btn">JOIN NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h3 class="reviews__title title section__title">Client <span
+            class="title__i-text title__color-text">reviews</span></h3>
+        <p class="reviews__description text">Happy clients, happy us. Read our client reviews about the work process and
+          results.</p>
+        <div class="reviews__container">
+          <div class="review">
+            <img src="src/img/review1.webp" alt="" class="review__img">
+            <div class="review__content">
+              <p class="review__text">Solis did a great job. Whether providing direct development support or giving us
+                the
+                opportunity to make our development
+                updates, Solis's web design expertise and support services were top notch! It didn't take long to stand
+                up our
+                website,
+                and we were pleased with the design and layout of the graphics and information.</p>
+              <span class="review_auth">Dr. Jamika Burge</span>
+            </div>
+          </div>
+          <div class="review">
+            <img src="src/img/review2.webp" alt="" class="review__img">
+            <div class="review__content">
+              <p class="review__text">Solis is a cutting edge company and knows the importance of excellence. Having
+                been in business for 21 years, I know
+                when I’ve found a competent professional and more importantly a company with integrity. I highly
+                recommend this company
+                and am available for further reference if needed.</p>
+              <span class="review_auth">Evie-Rose Prosse</span>
+            </div>
+          </div>
+          <div class="review">
+            <img src="src/img/review3.webp" alt="" class="review__img">
+            <div class="review__content">
+              <p class="review__text">I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web
+                Development. She indeed is a developer
+                and can build a site from scratch. She understands functionality and is great at constructing a site
+                that is robust and
+                fully functioning.</p>
+              <span class="review_auth">Elvis Mooney</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <form action="" method="get" class="contact__form form">
+          <div class="form__left">
+            <h3 class="form__title title section__title">Contact <span class="title__i-text title__color-text">our sales
+                team</span>
+            </h3>
+            <p class="form__subtitle text">Our team is happy to answer your sales questions.Fill out the form and we’ll
+              be in touch as soon as possible.</p>
+          </div>
+          <div class="form__right">
+            <input class="contact__input" type="text" id="name" placeholder="Your Name" required>
+            <input class="contact__input" type="email" id="mail" placeholder="Email" required
+              pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+">
+            <input class="contact__input" type="text" id="more" placeholder="Tell more">
+            <button type="submit" class="contact__btn btn color-btn">SEND REQuest</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__item">
+          <span class="footer__copy">© 2020 Solisgroup. All Rights Reserved.</span>
+        </div>
+        <div class="footer__item">
+          <span class="footer__copy">made by</span>
+          <span class="footer__text">Zgraya.digital</span>
+        </div>
+        <div class="footer__item">
+          <span class="footer__text">User Agreement</span>
+          <span class="footer__text">Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

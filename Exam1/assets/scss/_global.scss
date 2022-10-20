@@ -1,0 +1,31 @@
+body {
+  color: #262A3F;
+  font-family: 'Lato', sans-serif;
+}
+
+.main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(183.11deg, rgba(255, 255, 255, 0) 347.2px, #FFFFFF 470px), url('../img/first-screen.webp');
+  background-repeat: no-repeat no-repeat;
+  background-position-y: 441px, 0;
+  background-size: 100%, 100%, 743px, contain;
+  position: relative;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media(max-width:1170px) {
+  .main {
+    background-image: none;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
