@@ -1,0 +1,21 @@
+.field {
+  background-color: green;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cards-wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@import '_normalize';
+@import '_card';
